@@ -2,17 +2,120 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="hero-greeting">Hi, I'm</p>
+    <h1 class="hero-name">Quang Tran</h1>
+    <h2 class="hero-title">Full-Stack Developer & DevOps Engineer</h2>
+    <p class="hero-bio">Java lover with extensive experience in enterprise applications, cloud engineering, and modern web technologies. Based in Hanoi, Vietnam.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+      <a href="/Tran-Xuan-Quang.pdf" class="btn btn-outline" target="_blank"><i class="fas fa-file-pdf"></i> View Resume</a>
+    </div>
+  </div>
+</section>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<!-- Skills -->
+<section class="skills-section" id="skills">
+  <div class="section-container">
+    <h2 class="section-title">Skills & Expertise</h2>
+    <p class="section-subtitle">Technologies and capabilities I bring to every project</p>
 
-      <div class="entry">
-        {{ post.excerpt }}
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon java"><i class="fab fa-java"></i></div>
+        <h3>Java</h3>
+        <p>Enterprise application development with Spring Boot, Microservices architecture, JPA/Hibernate, and RESTful APIs. Deep experience in AEM (Adobe Experience Manager) and large-scale systems.</p>
+        <div class="skill-tags">
+          <span>Spring Boot</span><span>Microservices</span><span>JPA / Hibernate</span><span>AEM</span><span>Maven</span>
+        </div>
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+      <div class="skill-card">
+        <div class="skill-icon dotnet"><i class="fas fa-code"></i></div>
+        <h3>.NET</h3>
+        <p>Building robust backend services and APIs using C# and ASP.NET Core. Experienced with Entity Framework, dependency injection, and clean architecture patterns.</p>
+        <div class="skill-tags">
+          <span>C#</span><span>ASP.NET Core</span><span>Entity Framework</span><span>LINQ</span><span>Web API</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon js"><i class="fab fa-js"></i></div>
+        <h3>JavaScript / TypeScript</h3>
+        <p>Modern frontend and server-side development. Building type-safe, maintainable applications with TypeScript and React, and efficient APIs with Node.js.</p>
+        <div class="skill-tags">
+          <span>TypeScript</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>REST / GraphQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon devops"><i class="fas fa-server"></i></div>
+        <h3>DevOps</h3>
+        <p>Designing and maintaining CI/CD pipelines, container orchestration, and cloud infrastructure. Focused on automation, reliability, and delivering software faster.</p>
+        <div class="skill-tags">
+          <span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>SonarQube</span><span>Cloud</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon design"><i class="fas fa-pencil-ruler"></i></div>
+        <h3>Design</h3>
+        <p>Translating requirements into clean UI/UX experiences and well-structured system architecture. Strong focus on clarity, usability, and developer experience.</p>
+        <div class="skill-tags">
+          <span>UI / UX</span><span>System Design</span><span>Architecture</span><span>Figma</span><span>Wireframing</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon comm"><i class="fas fa-users"></i></div>
+        <h3>Communication</h3>
+        <p>Effective technical communication across teams and stakeholders. Experienced in leading cross-functional projects, mentoring engineers, and facilitating Agile ceremonies.</p>
+        <div class="skill-tags">
+          <span>Team Leadership</span><span>Agile / Scrum</span><span>Mentoring</span><span>Documentation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about-section" id="about">
+  <div class="section-container">
+    <div class="about-content">
+      <h2 class="section-title">About Me</h2>
+      <p>I'm Quang Tran (Andrey), a software engineer from Hanoi, Vietnam. I started as a Java developer and have grown into a full-stack engineer with a strong interest in cloud infrastructure, system design, and developer tooling.</p>
+      <p>I'm a relentless learner — currently diving deeper into Cloud Engineering, AEM, and Microservices. I believe that great software comes from great teams, and great teams communicate well.</p>
+      <div class="about-interests">
+        <span><i class="fas fa-cloud"></i> Cloud Engineering</span>
+        <span><i class="fas fa-cubes"></i> Microservices</span>
+        <span><i class="fas fa-book-open"></i> Continuous Learning</span>
+        <span><i class="fas fa-landmark"></i> History</span>
+        <span><i class="fas fa-brain"></i> Human Nature</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact-section" id="contact">
+  <div class="section-container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Open to new opportunities, collaborations, and conversations.</p>
+    <div class="contact-links">
+      <a href="mailto:tranxuanquangls@gmail.com" class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>tranxuanquangls@gmail.com</span>
+      </a>
+      <a href="https://github.com/QuangTranXuan" target="_blank" class="contact-item">
+        <i class="fab fa-github"></i>
+        <span>github.com/QuangTranXuan</span>
+      </a>
+      <a href="https://linkedin.com/in/quang-tran-xuan" target="_blank" class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <span>linkedin.com/in/quang-tran-xuan</span>
+      </a>
+    </div>
+  </div>
+</section>
